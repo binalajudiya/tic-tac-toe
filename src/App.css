@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+div#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: #f1f1f1;
+}
+
+.status {
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.square {
+  border: 1px solid #999;
+  float: left;
+  font-size: 50px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+  color: #fff;
+  background: #333;
+}
+button:hover {
+  cursor: pointer;
+}
+.status, .reset {
+  margin-top: 10px;
+}
+
+/** button styles **/
+.reset {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #3281d7;
+  border-color: #3281d7;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-size: 16px;
+}
+
+.reset:active {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.reset:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.reset:focus {
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+}
